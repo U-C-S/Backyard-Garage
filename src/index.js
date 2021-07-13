@@ -7,10 +7,13 @@ const port = 7000;
 // app.get("/", (req, res) => {
 //   res.sendFile(path.join(__dirname,"./index.html"))
 // });
-
-app.listen(port, () => {
+app.listen(process.env.PORT || 7000,() => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
+// app.listen(port, () => {
+//   console.log(`Example app listening at http://localhost:${port}`);
+// });
 
 app.all("*", (req, res, next) => {
   let reqPath = req.url;
