@@ -1,10 +1,16 @@
 {
-  "dependencies": {
-    "express": "^4.17.1",
-    "@types/express": "^4.17.13"
-  },
-  
+  "name": "backyard-garage",
+  "type": "module",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.3.2",
+    "nodemon": "^2.0.12"
   }
 }
